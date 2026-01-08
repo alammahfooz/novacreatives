@@ -6,6 +6,35 @@
     --dark: #252525;
 }
 
+body {
+  font-family: 'Merriweather', serif;
+  background-color:  #fffdeb;  
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.65;
+  letter-spacing: 0.15px;
+  color: #f4f2ec;
+}
+
+@font-face {
+  font-family: 'Canela';
+  src: url('/fonts/Canela-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Canela', serif;
+}
+p {
+  max-width: 900px;
+}
+
+
+
+
 .back-to-top {
     position: fixed;
     display: none;
@@ -88,6 +117,8 @@
 .navbar .navbar-nav .nav-link.active {
     color: var(--dark);
 }
+   
+ 
 
 .navbar.sticky-top {
     top: -100px;
@@ -518,17 +549,110 @@
          }
 
 .heading-main {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    line-height: 1.2;
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(42px, 6vw, 72px);
+  line-height: 1.15;
+  color: #f5f2eb;
 }
 
+.cursive {
+  font-family: 'Playfair Display' Italic;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+
+.script {
+  font-family: 'Allura', cursive;
+}
+
+ 
 .heading-accent {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Merriweather', serif;
     font-weight: 400;
     font-size: 1.1em;
     letter-spacing: 1px;
 }
 .heading-accent {
     font-style: italic;
+}
+
+
+.navbar,
+.navbar a {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+   
+}
+
+
+.navbar a:hover,
+.navbar .active {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  color: #fff !important;
+}
+
+
+
+ 
+
+
+.navbar {
+  position: relative; /* VERY IMPORTANT */
+}
+
+.nav-icons {
+  position: absolute;
+  top: 16px;
+  right: 80px;
+  display: flex;
+  gap: 30px;
+ 
+}
+
+.nav-icons i {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 18px;
+  color: #f5f2eb;
+  cursor: pointer;
+}
+
+
+
+/* Navbar font & spacing fix */
+.navbar-nav .nav-link {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #f5f2eb !important;
+  padding: 0 22px;
+  letter-spacing: 0.3px;
+}
+
+/* Active & hover underline like screenshot */
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+/* Dropdown arrow alignment */
+.navbar-nav .dropdown-toggle::after {
+  margin-left: 6px;
+}
+
+/* Navbar vertical alignment */
+.navbar-nav {
+  align-items: center;
+}
+
+/* Desktop spacing */
+@media (min-width: 992px) {
+  .navbar-nav {
+    gap: 12px;
+  }
 }
