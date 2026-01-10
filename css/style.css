@@ -1,36 +1,116 @@
 /********** Template CSS **********/
 :root {
-    --primary: #23533B;
+    --primary: #0E301D;
     --secondary: #777777;
     --light: #F8F8F8;
     --dark: #252525;
 }
 
 body {
-  font-family: 'Merriweather', serif;
-  background-color:  #fffdeb;  
-}
-
-p {
-  font-size: 20px;
-  line-height: 1.65;
-  letter-spacing: 0.15px;
-  color: #f4f2ec;
+    font-family:
+        "IBM Plex Sans",
+        "DenitaScript",
+        "Acumin Variable Concept",
+        "Athelas", !important;
+    background-color: #fffdeb;
+    color: #fffdeb !important;
 }
 
 @font-face {
-  font-family: 'Canela';
-  src: url('/fonts/Canela-Regular.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
+    font-family: "IBM Plex Sans";
+    src: url("/fonts/IBMPlexSans-Regular.ttf") format("truetype");
+
 }
 
-body {
-  font-family: 'Canela', serif;
+@font-face {
+    font-family: "DenitaScript";
+    src: url("/fonts/denitascript-3z8mp.ttf") format("truetype");
 }
+
+@font-face {
+    font-family: "Athelas";
+    src: url("/fonts/Athelas.ttc") format("truetype");
+}
+
+@font-face {
+    font-family: "Acumin Variable Concept";
+    src: url("/fonts/AcuminVariableConcept.otf") format("opentype");
+}
+
+
+.ibm {
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+.denita {
+    font-family: "DenitaScript", cursive;
+    font-weight: 400;
+}
+
+.athelas {
+    font-family: "Athelas", serif;
+}
+
+.acumin {
+    font-family: "Acumin Variable Concept", sans-serif;
+}
+
+h1 {
+    font-size: 72px !important;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 48px !important;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 48px !important;
+    font-weight: 500;
+}
+
+h4 {
+    font-size: 36px !important;
+    font-weight: 400;
+}
+
+h5 {
+    font-size: 24px !important;
+    font-weight: 400;
+}
+
+h6 {
+    font-size: 18px !important;
+    font-weight: 400;
+}
+
 p {
-  max-width: 900px;
+    font-size: 14px;
+    font-weight: 400;
 }
+
+
+
+
+
+
+p {
+    font-size: 14px;
+    line-height: 1.30;
+    letter-spacing: 0.15px;
+    color: #f4f2ec;
+}
+
+@font-face {
+    font-family: 'Canela';
+    src: url('/fonts/Canela-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
 
 
 
@@ -117,8 +197,8 @@ p {
 .navbar .navbar-nav .nav-link.active {
     color: var(--dark);
 }
-   
- 
+
+
 
 .navbar.sticky-top {
     top: -100px;
@@ -167,7 +247,7 @@ p {
     flex-direction: column;
     align-items: left;
     justify-content: center;
-    background: rgba(0, 0, 0, .5);
+    /* background: rgba(0, 0, 0, .5); */
     z-index: 1;
     width: 100%;
 }
@@ -188,7 +268,7 @@ p {
         position: relative;
         min-height: 500px;
     }
-    
+
     #header-carousel .carousel-item img {
         position: absolute;
         width: 100%;
@@ -356,6 +436,7 @@ p {
 }
 
 .project-carousel .owl-dots {
+    display: none !important;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -523,57 +604,60 @@ p {
 }
 
 
-   @media (max-width: 991px) {
-            .navbar-nav .nav-link {
-                padding: 10px 15px;
-            }
-        }
+@media (max-width: 991px) {
+    .navbar-nav .nav-link {
+        padding: 10px 15px;
+    }
+}
 
 
-        /* Mobile only: force blue navbar background */
-        @media (max-width: 991px) {
-            #mainNavbar {
-                background-color: #23533B !important;
-            }
-        }
+/* Mobile only: force blue navbar background */
+@media (max-width: 991px) {
+    #mainNavbar {
+        background-color: #0E301D !important;
+    }
+}
 
-        .carousel-content{
-            margin-top: -200px;
-            margin-left: 40px ;
-        }
-         .carousel-content h1{
-            font-size: 50px;
-         }
-         .carousel-content h4{
-            font-size: 20px;
-         }
+.carousel-content {
+    margin-top: -200px;
+    margin-left: 40px;
+}
+
+.carousel-content h1 {
+    font-size: 50px;
+    margin-top: 246px;
+    margin-left: 40px;
+}
+
+.carousel-content p {
+    margin-left: 40px;
+    text-align: left;
+    font-size: 24px;
+}
+
+
+
+
 
 .heading-main {
-  font-family: 'Playfair Display', serif;
-  font-size: clamp(42px, 6vw, 72px);
-  line-height: 1.15;
-  color: #f5f2eb;
-}
-
-.cursive {
-  font-family: 'Playfair Display' Italic;
-  font-style: italic;
-  font-weight: 400;
-  letter-spacing: 0.5px;
+    font-family: "Athelas";
+    font-size: clamp(42px, 6vw, 72px);
+    line-height: 1.15;
+    color: #fffdeb;
 }
 
 
-.script {
-  font-family: 'Allura', cursive;
-}
 
- 
+
+
+
 .heading-accent {
     font-family: 'Merriweather', serif;
     font-weight: 400;
     font-size: 1.1em;
     letter-spacing: 1px;
 }
+
 .heading-accent {
     font-style: italic;
 }
@@ -581,78 +665,165 @@ p {
 
 .navbar,
 .navbar a {
-  font-family: 'Inter', sans-serif;
-  font-weight: 500;
-  letter-spacing: 0.3px;
-   
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+
 }
 
 
 .navbar a:hover,
 .navbar .active {
-  text-decoration: underline;
-  text-underline-offset: 6px;
-  color: #fff !important;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    color: #fff !important;
 }
 
 
 
- 
+
 
 
 .navbar {
-  position: relative; /* VERY IMPORTANT */
+    position: relative;
+    /* VERY IMPORTANT */
 }
 
 .nav-icons {
-  position: absolute;
-  top: 16px;
-  right: 80px;
-  display: flex;
-  gap: 30px;
- 
+    position: absolute;
+    top: 12px;
+    right: 128px;
+    display: flex;
+    gap: 30px;
+
 }
 
 .nav-icons i {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-size: 18px;
-  color: #f5f2eb;
-  cursor: pointer;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 18px;
+    color: #f5f2eb;
+    cursor: pointer;
 }
 
 
 
 /* Navbar font & spacing fix */
 .navbar-nav .nav-link {
-  font-family: 'Inter', sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  color: #f5f2eb !important;
-  padding: 0 22px;
-  letter-spacing: 0.3px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #f5f2eb !important;
+    padding: 0 22px;
+    letter-spacing: 0.3px;
 }
 
 /* Active & hover underline like screenshot */
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link.active {
-  text-decoration: underline;
-  text-underline-offset: 6px;
+    text-decoration: underline;
+    text-underline-offset: 6px;
 }
 
 /* Dropdown arrow alignment */
 .navbar-nav .dropdown-toggle::after {
-  margin-left: 6px;
+    margin-left: 6px;
 }
 
 /* Navbar vertical alignment */
 .navbar-nav {
-  align-items: center;
+    align-items: center;
 }
 
 /* Desktop spacing */
 @media (min-width: 992px) {
-  .navbar-nav {
-    gap: 12px;
-  }
+    .navbar-nav {
+        gap: 72px;
+    }
+}
+
+.who-we-are {
+    font-family: 'athelas';
+    background-color: #0E301D;
+    margin: 20px 0px;
+
+}
+
+.who-we-are .heading h2,
+p {
+    text-align: center;
+}
+
+.who-we-are .heading p {
+    font-size: 20px;
+}
+
+.who-we-are img {
+    width: 50px;
+    height: 50px;
+    margin-left: 80px;
+}
+
+.who_we_are_content p {
+    text-align: left;
+}
+
+
+.all-in-one-section h4 {
+    color: #0E301D !important;
+
+}
+
+.project-item img {
+    width: 200px;
+    height: 400px;
+    object-fit: cover;
+}
+
+
+
+.stats {
+    display: flex;
+    align-items: flex-end;
+    gap: 40px;
+    padding: 40px;
+    background: #fbf8e8;
+}
+
+.label {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.bars {
+    display: flex;
+    align-items: flex-end;
+}
+
+.bar {
+    width: 180px;
+    color: #fff;
+    font-size: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+}
+
+.b1 {
+    height: 220px;
+    background: #0b2a1a;
+}
+
+.b2 {
+    height: 320px;
+    background: #6b5c46;
+}
+
+.b3 {
+    height: 420px;
+    background: #061c12;
 }
