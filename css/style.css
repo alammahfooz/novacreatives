@@ -1349,3 +1349,9 @@ p {
   margin-bottom:12px;
   line-height:1.6;
 }
+
+
+.nova-pricing-wrap .nova-pricing-btn{
+  background-color: #0E301D;
+  color: #f4f2ec !important;
+}
