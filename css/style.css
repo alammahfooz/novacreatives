@@ -786,15 +786,16 @@ p {
     display: flex;
     align-items: flex-end;
     gap: 40px;
-    padding: 40px;
-    background: #fbf8e8;
+    padding: 40px 0px;
+   
 }
 
 .label {
     writing-mode: vertical-rl;
     transform: rotate(180deg);
-    font-size: 40px;
-    font-weight: 700;
+    font-size: 92px;
+    padding-left: 0px;
+    margin-left: 0px;
 }
 
 .bars {
@@ -803,27 +804,56 @@ p {
 }
 
 .bar {
-    width: 180px;
-    color: #fff;
-    font-size: 48px;
+    width: 370px;
+    padding: 20px 0px;
+    font-size: 120px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     writing-mode: vertical-rl;
     transform: rotate(180deg);
 }
 
 .b1 {
-    height: 220px;
+    height: 320px;
     background: #0b2a1a;
 }
 
 .b2 {
-    height: 320px;
+    height: 480px;
     background: #6b5c46;
 }
 
 .b3 {
-    height: 420px;
+    height: 620px;
     background: #061c12;
 }
+
+  .stats-section h2{
+        color: #0E301D ;
+        text-align: center;
+    }
+
+
+      .brand-area{
+            background-color: #0E301D;
+            width: 100%;
+            padding: 0px;
+
+        }
+        .brand-area img{
+            margin-left: -22px;
+        }
+        .brand-section{
+            display: flex;
+            justify-content: space-between;
+            text-align: left;
+            
+        }
+        .brand-section h1{
+            line-height: 1;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #f4f2ec;
+            margin-bottom: 20px;
+        }
+        
