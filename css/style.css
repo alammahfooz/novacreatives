@@ -1290,3 +1290,62 @@ p {
     text-decoration: none;
     font-size: 14px;
 }
+
+
+
+ .service-area h4{
+         color: #0E301D !important;
+
+    }
+
+
+    .nova-service-page{
+  padding:80px 0;
+  margin-top: 170px;
+  color: #0E301D;
+}
+
+.nova-service-title{
+ 
+  margin-bottom:60px;
+}
+
+.nova-service-title h1{
+    text-align: center;
+  font-size:38px;
+  color:#0E301D;
+  margin-bottom:15px;
+}
+
+.nova-service-title p{
+  font-size:18px;
+  color:#555;
+}
+
+.nova-service-section{
+  padding:50px;
+  margin-bottom:40px;
+  border-left:6px solid #0E301D;
+}
+
+.bg-light{
+  background:#f8f8f5;
+}
+
+.bg-dark-soft{
+  background:#eef3f0;
+}
+
+.nova-service-section h3{
+  margin-bottom:20px;
+  color:#0E301D;
+}
+
+.nova-service-section ul{
+  padding-left:20px;
+}
+
+.nova-service-section li{
+  margin-bottom:12px;
+  line-height:1.6;
+}
