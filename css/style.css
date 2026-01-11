@@ -1208,7 +1208,7 @@ p {
 .contact-form {
     background: #0E301D;
     padding: 50px;
-    width: 420px;
+    width: 500px;
 }
 
 .contact-form input,
@@ -1373,4 +1373,8 @@ p {
         }
         .about-section h5{
             font-weight: 500;
+        }
+
+          .google-map  h4{
+            font-weight: 700;
         }
