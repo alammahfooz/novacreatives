@@ -1156,3 +1156,65 @@ p {
 /* ------testimonial  close-------*/
   
 
+    .map-section h4{
+        text-align: center;
+        color: #0E301D !important;
+    }
+    
+
+.contact-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.contact-info {
+  color: #0E301D;
+  max-width: 40%;
+ 
+}
+
+.info-item {
+    width: 380px;
+  margin-bottom: 80px;
+
+}
+
+.contact-form {
+  background: #0E301D;
+  padding: 50px;
+  width: 420px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  background: #fbf7e6;
+  border: none;
+  padding: 14px;
+  margin-bottom: 20px;
+}
+
+.contact-form textarea {
+  height: 120px;
+  resize: none;
+}
+
+.contact-form button {
+  background: #fbf7e6;
+  border: none;
+  padding: 10px 30px;
+  color: #0E301D;
+  font-weight: 600;
+  display: block;
+  margin: auto;
+}
+
+.info-item i{
+    font-size: 30px;
+}
+.form-section h4{
+    text-align: center;
+    color: #0E301D;
+}
