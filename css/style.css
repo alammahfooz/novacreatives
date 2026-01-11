@@ -1355,3 +1355,22 @@ p {
   background-color: #0E301D;
   color: #f4f2ec !important;
 }
+
+
+    .service-banner .content{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+.about-section{
+            margin-top: 200px;
+            text-align: center;
+        }
+        .about-section h4{
+            font-weight: 600;
+        }
+        .about-section h5{
+            font-weight: 500;
+        }
