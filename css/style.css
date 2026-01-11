@@ -16,6 +16,14 @@ body {
     color: #fffdeb !important;
 }
 
+.bg-dark-green {
+  background-color: #0E301D !important;
+}
+
+.text-dark-green {
+  color: #0E301D !important;
+}
+
 @font-face {
     font-family: "IBM Plex Sans";
     src: url("/fonts/IBMPlexSans-Regular.ttf") format("truetype");
@@ -857,3 +865,70 @@ p {
             margin-bottom: 20px;
         }
         
+
+        .container {
+}
+
+.logos-ticker {
+  --speed: 15s;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  position: relative;
+   
+  margin: 0 auto;
+}
+
+.logos-ticker-fade {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  
+}
+
+.logos-ticker-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: slide-to-left var(--speed) linear infinite;
+}
+
+.logos-ticker--right .logos-ticker-container {
+  animation-name: slide-to-right;
+}
+
+.logos-ticker-container > svg {
+  margin: 0 24px;
+}
+
+@keyframes slide-to-left {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes slide-to-right {
+  0% {
+    transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+
+  .logo-heading{
+        text-align: center;
+        font-size: 24px;
+        font-weight: 500;
+    }
+    .our-partners{
+        font-size: 32px;
+        font-weight: 600;
+    }
