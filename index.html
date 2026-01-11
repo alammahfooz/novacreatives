@@ -71,7 +71,48 @@
         </div>
     </nav>
 
+<style>
+    /* Mobile + Tablet only */
+@media (max-width: 991px) {
 
+  .heading-main{
+    font-size: 42px !important;
+    line-height: 1.2;
+  }
+
+  .carousel-caption{
+    left: -20px !important;
+    right: 0 !important;
+    text-align: center;
+  }
+  .carousel-caption h1{
+    margin-top: 90px;
+    margin-left: 20px;
+  }
+
+  .carousel-content{
+    margin: 0 auto;
+  }
+
+  .carousel-content p{
+    font-size: 19px;
+    margin-top: 0px ;
+    margin-left: 20px;
+  }
+  .carousel-content br{
+    display: none;
+  }
+  
+
+  .btn{
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+    padding: 8px 16px !important;
+  }
+}
+
+
+</style>
 
 
     <!-- Carousel Start -->
@@ -79,9 +120,9 @@
         <div id="header-carousel" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="w-100" src="img/hero.png" alt="Image">
-                    <div class="carousel-caption" style="left:0; right:auto;">
-                        <div class="carousel-content p-3" style="max-width: 900px;">
+                    <img class="w-100 hero-img" src="img/hero.png" alt="Image">
+                    <div class="carousel-caption hero-caption" style="left:0; right:auto;">
+                        <div class="carousel-content hero-content p-3" style="max-width: 900px;">
                             <h1 class="athelas  animated zoomIn heading-main">
                                 The <span class="denita">search</span> is over, we’re <br>
                                 here for <span class="denita">you.</span>
@@ -114,7 +155,6 @@
     <!-- Service Start -->
     <div class="px-5">
         <div class="">
-
             <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-4">
                 <div class="col wow fadeInUp" data-wow-delay="0.1s">
                     <a class="service-item d-block rounded text-center" href="">
@@ -183,6 +223,45 @@
     <!-- Service End -->
 
 
+    <style>
+        /* Mobile + Tablet only */
+@media (max-width: 991px){
+
+  /* heading center + logo wrap */
+  .who-we-are .heading .d-flex{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* remove manual spacing issues */
+  .who_we_are_content{
+    flex-direction: column;
+  }
+
+  .who_we_are_content > div{
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+
+  /* remove gap column */
+  .who_we_are_content .col-3{
+    display: none;
+  }
+
+  /* text readability */
+  .who-we-are p br{
+    display: none;
+  }
+
+  .who-we-are{
+    
+    text-align: justify;
+    margin: 20px 0px;
+  }
+}
+
+    </style>
 
     <!-- Feature Start -->
     <div class="who-we-are p-5">
@@ -319,6 +398,61 @@
     </div>
 
     <style>
+        /* Tablet */
+@media (max-width: 992px) {
+    .brand-area img:first-of-type {
+        display: block;
+        margin: 0 auto 20px auto; /* center logo */
+        width: 120px;
+    }
+
+    .brand-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .brand-section h1 {
+        font-size: 28px;
+        line-height: 1.3;
+    }
+
+    .brand-section h5 {
+        font-size: 16px;
+    }
+
+    .brand-section img:last-of-type {
+        width: 100%;
+        height: auto; /* maintains aspect ratio */
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .brand-area img:first-of-type {
+        width: 100px;
+        margin-bottom: 15px;
+    }
+
+    .brand-section h1 {
+        font-size: 22px;
+        line-height: 1.2;
+    }
+
+    .brand-section h5 {
+        font-size: 14px;
+    }
+
+    .brand-section img:last-of-type {
+        width: 100%;
+        height: auto; /* full width, proportional height */
+    }
+
+    .brand-section {
+        gap: 15px;
+    }
+}
 
     </style>
 
@@ -569,7 +703,10 @@
     </div>
 
 
+<style>
 
+
+</style>
 
     <!-- Project End -->
     <div class="container-fluid py-5 athelas stats-section">
@@ -588,7 +725,20 @@
         </div>
     </div>
 
-
+<style>
+    @media (max-width: 992px) {
+ .testimonial4_slide {
+     width: 100% !important; 
+ }
+    }
+    @media (max-width: 576px) {
+    .testimonial4_slide {
+  
+    width: 100% !important; 
+   
+    }
+}
+</style>
 
     <div class="testimonial-section">
 
@@ -646,14 +796,154 @@
         </div>
     </div>
 
+    <style> 
+    
+/* Desktop / LG - keep original layout */
+.contact-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.contact-info .d-flex {
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-info .info-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Form default desktop */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+    .form-section h4 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .contact-info .d-flex {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .contact-info .info-item {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .contact-form {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 20px; /* form below icons */
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .form-section h4 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .contact-info .d-flex {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .contact-info .info-item {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .contact-info .info-item i,
+    .contact-info .info-item span {
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+
+    .contact-form {
+        width: 95%;
+        margin: 20px auto 0 auto; /* full width, below icons */
+        gap: 10px;
+    }
+
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form button {
+        width: 100%;
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .contact-form textarea {
+        min-height: 120px;
+    }
+
+    .contact-form button {
+        padding: 10px;
+    }
+}
+
+    </style>
 
     <div class="container-fluid     form-section mb-5">
         <h4 class="athelas">Will be great<br><span class="denita">to listen from you.</span></h4>
         <section class="contact-section">
             <div class="container">
-                <div class="contact-wrap">
+                <div class="contact-wrap" >
 
-                    <div class="contact-info d-flex justify-content-between">
+                    <div class="contact-info d-flex justify-content-between" >
                         <div class="d-flex flex-column gap-4">
                             <div class="info-item">
                                 <i class="fa fa-map-marker-alt me-3"></i><br>
@@ -701,7 +991,86 @@
 
     </div>
 
+<style>
+ /* Tablet */
+@media (max-width: 992px) {
+    /* Stack main sections */
+    .nova-footer-row > .col-lg-4,
+    .nova-footer-row > .col-lg-8 {
+        flex: 1 1 100%;
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
 
+    .nova-footer-brand p {
+        text-align: center;
+    }
+
+    .nova-footer-center .nova-footer-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .nova-footer-center .nova-footer-links div {
+        text-align: center !important;
+    }
+
+    .nova-footer-logo {
+        width: 120px;
+    }
+
+    .btn.btn-lvory {
+        padding: 10px 30px;
+        font-size: 16px;
+    }
+
+    /* Keep contact info row intact */
+    .nova-footer-top .row {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .nova-footer-top .col-lg-3 {
+        flex: 1 1 45%;
+        text-align: center;
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .nova-footer-row > .col-lg-4,
+    .nova-footer-row > .col-lg-8 {
+        flex: 1 1 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .nova-footer-logo {
+        width: 150px;
+    }
+
+    .btn.btn-lvory {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+
+    .nova-footer-center .nova-footer-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nova-footer-top .col-lg-3 {
+        flex: 1 1 100%;
+        font-size: 14px;
+    }
+}
+
+
+</style>
 
     <!-- Footer Start -->
     <div class="container-fluid footer nova-footer" style="background:#0E301D;">
@@ -712,7 +1081,7 @@
                 <div class="col-lg-4 nova-footer-brand">
 
                     <img src="img/sitelogo.png" alt="nova creatives" width="150" class="nova-footer-logo">
-                    <p class="mt-3" style="text-align: left;">Design your identity.<br>Define your future.</p>
+                    <p class="mt-3"  >Design your identity.<br>Define your future.</p>
                      <a href="contact.html" class="btn btn-lvory rounded-pill  fs-5 py-2 px-5">
     Careers
 </a>
